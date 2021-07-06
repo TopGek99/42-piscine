@@ -1,7 +1,7 @@
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strncat(char *dest, char *src, unsigned int n)
 {
-	int	index_dest;
-	int	index_src;
+	unsigned int	index_src;
+	int				index_dest;
 
 	index_dest = 0;
 	index_src = 0;
@@ -9,7 +9,7 @@ char	*ft_strcat(char *dest, char *src)
 	{
 		index_dest++;
 	}
-	while (src[index_src])
+	while (index_src < n && src[index_src])
 	{
 		dest[index_dest] = src[index_src];
 		index_dest++;
