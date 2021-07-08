@@ -22,7 +22,7 @@ test02:
 	./ex02/test test1 test2 test3
 test03:
 	gcc -Wall -Wextra -Werror ex03/*.c -o ex03/test
-	./ex03/test
+	./ex03/test sdfbds qdadf aweagd
 test04:
 	gcc -Wall -Wextra -Werror ex04/*.c -o ex04/test
 	./ex04/test
