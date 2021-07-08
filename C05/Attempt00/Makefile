@@ -29,5 +29,11 @@ test04:
 test05:
 	gcc -Wall -Wextra -Werror ex05/*.c -o ex05/test
 	./ex05/test
+test06:
+	gcc -Wall -Wextra -Werror ex06/*.c -o ex06/test
+	./ex06/test
+test07:
+	gcc -Wall -Wextra -Werror ex07/*.c -o ex07/test
+	./ex07/test
 norm:
 	norminette */ft*.c
