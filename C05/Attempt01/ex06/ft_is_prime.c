@@ -18,18 +18,3 @@ int	ft_is_prime(int nb)
 	}
 	return (1);
 }
-
-int	ft_find_next_prime(int nb)
-{
-	int	prime;
-
-	prime = nb;
-	while (1)
-	{
-		if (ft_is_prime(prime))
-		{
-			return (prime);
-		}
-		prime++;
-	}
-}
