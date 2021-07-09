@@ -16,6 +16,7 @@ void	ft_sort_str_arr(char **tab, int size)
 {
 	int		outer_count;
 	int		inner_count;
+	int		str_count;
 	char	*temp;
 
 	outer_count = 0;
@@ -24,11 +25,17 @@ void	ft_sort_str_arr(char **tab, int size)
 		inner_count = outer_count + 1;
 		while (inner_count < size)
 		{
-			if (tab[outer_count][0] > tab[inner_count][0])
+			str_count = 0;
+			while (tab[inner_count][str_count])
 			{
-				temp = tab[outer_count];
-				tab[outer_count] = tab[inner_count];
-				tab[inner_count] = temp;
+				if (tab[outer_count][str_count] > tab[inner_count][str_count])
+				{
+					temp = tab[outer_count];
+					tab[outer_count] = tab[inner_count];
+					tab[inner_count] = temp;
+					break;
+				}
+				str_count++;
 			}
 			inner_count++;
 		}

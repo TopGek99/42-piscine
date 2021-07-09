@@ -12,13 +12,13 @@ test00:
 	./ex00/test
 test01:
 	gcc -Wall -Wextra -Werror ex01/*.c -o ex01/test
-	./ex01/test test1 test2 test3
+	./ex01/test
 test02:
 	gcc -Wall -Wextra -Werror ex02/*.c -o ex02/test
-	./ex02/test test1 test2 test3
+	./ex02/test
 test03:
 	gcc -Wall -Wextra -Werror ex03/*.c -o ex03/test
-	./ex03/test test3 test1 test2
+	./ex03/test test1 test2 test3
 test04:
 	gcc -Wall -Wextra -Werror ex04/*.c -o ex04/test
 	./ex04/test
