@@ -7,8 +7,7 @@ int main(void)
 	int *range;
 	int size = ft_ultimate_range(&range, 3, 10);
 
-	printf("%d\n", size);
-	for (int i=0;i<7;i++)
+	for (int i=0;i<size;i++)
 	{
 		printf("%d\n", range[i]);
 	}

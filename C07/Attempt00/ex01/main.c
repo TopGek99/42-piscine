@@ -1,15 +1,27 @@
 #include <stdio.h>
 
 int	*ft_range(int min, int max);
+unsigned int	ft_abs(int n);
 
 int main(void)
 {
-	int *range = ft_range(3, 10);
-
-	for (int i=0;i<7;i++)
+	int max = 19;
+	int min = -5;
+	int *range = ft_range(min, max);
+	int	size = ft_abs(max - min);
+	
+	if (range)
 	{
-		printf("%d\n", range[i]);
+		for (int i=0;i<size;i++)
+		{
+			printf("%d\n", range[i]);
+		}
 	}
+	else
+	{
+		printf("No good\n");
+	}
+	
 
 	return 0;
 }

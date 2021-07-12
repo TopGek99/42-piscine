@@ -26,7 +26,11 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	char	*res;
 	int		ctr;
 
-	res = (char *)malloc(size);
+	res = (char *)malloc(sizeof(strs) + (sizeof(sep) * (size - 1)));
+	if (res == NULL)
+	{
+		return (0);
+	}
 	ctr = 0;
 	while (ctr < size)
 	{
