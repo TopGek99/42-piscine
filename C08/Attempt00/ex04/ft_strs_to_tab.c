@@ -33,11 +33,10 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	char				*temp;
 	int					index;
 
-	struct_arr = malloc(sizeof(struct s_stock_str) * ac);
+	struct_arr = malloc(sizeof(struct s_stock_str) * (ac + 1));
 	if (struct_arr == NULL)
 		return (NULL);
 	index = 0;
-	
 	while (index < ac)
 	{
 		temp = malloc(sizeof(av[index]));

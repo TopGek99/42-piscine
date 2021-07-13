@@ -60,8 +60,7 @@ void	ft_putnbr(int nb)
 	write(1, nb_str, num_to_str(nb, nb_str));
 }
 
-
-void ft_show_tab(struct s_stock_str *par)
+void	ft_show_tab(struct s_stock_str *par)
 {
 	int		index;
 
