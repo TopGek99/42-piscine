@@ -20,11 +20,13 @@ test03:
 	gcc -Wall -Wextra -Werror ex03/*.h ex03/*.c -o ex03/test
 	./ex03/test
 test04:
-	gcc -Wall -Wextra -Werror ex04/*.h ex04/*.c -o ex04/test
-	./ex04/test
+	gcc -Wall -Wextra -Werror ex04/*.h ex04/*.c
+test04-noW:
+	gcc ex04/*.h ex04/*.c
+	./a.out "blah"
 test05:
-	gcc -Wall -Wextra -Werror ex05/*.h ex05/*.c -o ex05/test
-	./ex05/test
+	gcc -Wall -Wextra -Werror ex05/*.h ex05/*.c
+	./a.out b b b
 test06:
 	gcc -Wall -Wextra -Werror ex06/*.h ex06/*.c -o ex06/test
 	./ex06/test

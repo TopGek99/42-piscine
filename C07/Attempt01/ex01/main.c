@@ -20,7 +20,5 @@ int main(void)
 	{
 		printf("No good\n");
 	}
-	
-
 	return 0;
 }
